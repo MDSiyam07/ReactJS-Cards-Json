@@ -1,0 +1,64 @@
+@font-face {
+  font-family: Market;
+  src: url(../../fonts/Market_Condensed_Medium.otf);
+}
+
+@font-face {
+  font-family: Mont;
+  src: url(../../fonts/Mont-Heavy.otf);
+}
+
+.titleFont {
+  font-family: Mont, bold;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  max-width: 100%;
+  margin: auto;
+}
+
+.bcnFont {
+  font-family: Market;
+}
+
+.extiaBarcelona {
+  display: inline-block;
+}
+
+
+.elemStyle {
+  position: relative;
+  overflow: hidden;
+  height: calc(100vh - 80px);
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: baseline; */
+}
+
+.titleFont {
+  font-family: Mont, bold;
+  line-height: 1;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 768px) {
+  .elemStyle {
+    position: relative;
+    height: calc(100vh - 162px);
+    background-color: #000;
+  }
+  
+  .titleFont {
+    font-family: Mont, bold;
+    line-height: 1;
+    margin-top: 0px;
+  }
+
+  .extiaBarcelona {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+}

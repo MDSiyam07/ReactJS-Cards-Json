@@ -1,0 +1,313 @@
+@font-face {
+    font-family: Market;
+    src: url(../../../fonts/Market_Condensed_Medium.otf);
+}
+  
+@font-face {
+    font-family: Mont;
+    src: url(../../../fonts/Mont-Heavy.otf);
+}
+  
+.titleFont {
+    font-family: Mont, bold;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    max-width: 100%;
+    margin: auto;
+}
+
+.movieName {
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    font-weight: bolder;
+    color: rgba(40, 61, 71, 1);
+    font-size: 120%;
+    margin: 4px 0;
+}
+
+.cardsComponent {
+    /*display: flex;
+    justify-content: space-between;
+    background-color: transparent;*/
+    /* padding: 12px; */
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: 1px solid #bdbdbd;
+    height: 48px;
+    padding: 0 24px 0 16px;
+    letter-spacing: .25px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn .mdi {
+    margin-right: 8px;
+}
+
+.btn-delete {
+    font-size: 16px;
+    color: red;
+}
+
+.btn-delete > .mdi-delete-empty {
+    display: none;
+}
+
+.btn-delete:hover {
+    background-color: #fff5f5;
+}
+
+.btn-delete:hover > .mdi-delete-empty {
+    display: block;
+}
+
+.btn-delete:hover > .mdi-delete {
+    display: none;
+}
+
+.btn-delete:focus {
+    box-shadow: 0 0 0 4px #ffcccc;
+}
+
+.footer {
+    margin-top: 30px;
+}
+
+.dataTable {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-row-gap: 20px;
+    grid-column-gap: 30px;
+    margin: 15px 20px;
+    justify-content: center;
+}
+
+.movieCard {
+    box-shadow: rgb(0 0 0 / 15%) 10px 15px 25px;
+    width: 28%;
+    margin: 8px 8px;
+    border: solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    vertical-align: middle;
+    background-color: darkgrey;
+    padding: 24px;
+    margin-top: 2%;
+}
+
+.backArrow {
+    height: 75%;
+    width: 50%;
+}
+  
+.backArrowBtn {
+    margin-top: 5px;
+    height: 35px;
+    width: 70px;
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    cursor: pointer;
+}
+  
+.topContainer {
+    max-height: 224px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bottomContainer {
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: gotham;
+    font-size: 30px;
+}
+  
+.form-control {
+    width: 100%;
+}
+  
+.backArrowButton {
+    padding: 12px;
+    border-radius: 20px;
+    border: 2px solid;
+    border-color: rgba(209, 209, 209, 0.815);
+    color: rgba(40, 61, 71, 1);
+    box-shadow: rgba(199, 199, 199, 0.15) 0px 15px 25px;
+    background-color: rgb(255, 255, 255);
+}
+  
+.backArrowButton:hover {
+    background-color: rgba(218, 218, 218, 0.3);
+    transition: background 0.5s;
+}
+  
+.backArrowButton:active {
+    background-color: rgba(226, 226, 226, 0.692);
+    transition: background 0s;
+}
+  
+@media screen and (max-width: 1023px) {
+    .cardsComponent {
+        display: flex;
+        justify-content: space-around;
+        background-color: #fb9b63;
+        box-shadow: rgb(0 0 0 / 15%) 0px 15px 25px;
+        border-radius: 30px;
+        /* padding: 12px; */
+    }
+    
+    .movieCard {
+        box-shadow: rgb(0 0 0 / 15%) 10px 15px 25px;
+        min-width: 30%;
+        /* margin: 0 8px; */
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        vertical-align: middle;
+        background-color: white;
+        padding: 24px;
+    }
+    
+    .topContainer {
+        max-height: 224px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .bottomContainer {
+        margin-top: 24px;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .form-control {
+        width: 100%;
+    }
+    
+    .backArrowButton {
+        padding: 12px;
+        border-radius: 20px;
+        border: 2px solid;
+        border-color: rgba(209, 209, 209, 0.815);
+        color: rgba(40, 61, 71, 1);
+        box-shadow: rgba(199, 199, 199, 0.15) 0px 15px 25px;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .backArrowButton:hover {
+        background-color: rgba(218, 218, 218, 0.3);
+        transition: background 0.5s;
+    }
+    
+    .backArrowButton:active {
+        background-color: rgba(226, 226, 226, 0.692);
+        transition: background 0s;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .cardsComponent {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        background-color: #fb9b63;
+        box-shadow: rgb(0 0 0 / 15%) 0px 15px 25px;
+        border-radius: 30px;
+        padding: 12px;
+    }
+    
+    .movieCard {
+        box-shadow: rgb(0 0 0 / 15%) 10px 15px 25px;
+        width: auto;
+        margin: 4px 8px;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        vertical-align: middle;
+        background-color: white;
+        padding: 24px;
+    }
+    
+    .topContainer {
+        max-height: 224px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .bottomContainer {
+        margin-top: 24px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    
+    .city {
+        text-align: center;
+        font-family: "Nunito", sans-serif;
+        font-weight: bolder;
+        color: rgba(40, 61, 71, 1);
+        font-size: 120%;
+        margin: 8px 0;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+    
+    .backArrowButton {
+        padding: 12px;
+        border-radius: 20px;
+        border: 2px solid;
+        border-color: rgba(209, 209, 209, 0.815);
+        color: rgba(40, 61, 71, 1);
+        box-shadow: rgba(199, 199, 199, 0.15) 0px 15px 25px;
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .backArrowButton:hover {
+        background-color: rgba(218, 218, 218, 0.3);
+        transition: background 0.5s;
+    }
+    
+    .backArrowButton:active {
+        background-color: rgba(226, 226, 226, 0.692);
+        transition: background 0s;
+    }
+}
